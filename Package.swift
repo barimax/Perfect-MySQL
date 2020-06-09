@@ -27,6 +27,9 @@ let clientPackage = "Perfect-mysqlclient-Linux"
 
 let package = Package(
 	name: "PerfectMySQL",
+	platforms: [
+        	.macOS(.v10_15),
+    	],
 	products: [
 		.library(name: "PerfectMySQL", targets: ["PerfectMySQL"])
 	],
